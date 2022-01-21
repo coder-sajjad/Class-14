@@ -1,0 +1,32 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.fivver_counter{
+    width: 500px;
+    margin: 0 auto;
+}
+
+#timeShow{
+    font-size: 60px;
+    font-weight: 600;
+    text-align: center;
+    color: rgb(97, 13, 13);
+}
+
+.ageCalculator{
+    width: 700px;
+    margin: 0 auto;
+    background-color: #eeeeee !important;
+}
+#mainForm span {
+    font-size: 18px;
+    font-weight: 400;
+    color: #1a1a1a;
+}
+#dateIcon{
+    font-size: 30px;
+    color: #ddd;
+}
+#submit{
+    font-weight: 700;
+}

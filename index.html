@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap" rel="stylesheet">
+    <!-- FONT-AWEsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- MY CSS -->
+    <link rel="stylesheet" href="style.css">
+
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="fivver_counter my-5 shadow-lg">
+            <div class="card">
+              <div class="card-title">
+                <h3 class="text-center py-2 bg-primary text-white" >ORDER TIMER</h3>
+              </div>
+              <div class="card-body">
+                <div class="timeMsg"></div>
+                <form id="fivver_form">
+                  <div class="form-group mb-3">
+                    <input id="date" type="date" class="form-control shadow-none">
+                  </div>
+                  <div class="form-group mb-3">
+                    <input id="time" type="time" class="form-control shadow-none">
+                  </div>
+                  <div class="form-group mb3">
+                    <input id="submit" type="submit" class="btn btn-primary shadow-none text-warning w-100" value="CREATE AN ORDER">
+                  </div>
+                  <hr>
+                  <h1 id="timeShow">
+                    
+                  </h1>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <div class="container mb-5">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="ageCalculator ">
+            <div class="card bg-info">
+              <div class="card-title">
+                <h3 class="text-center py-2 bg-success text-white">AGE CALCULATOR</h3>
+              </div>
+              <div class="card-body">
+                <h6 class="text-center bg-white text-success mb-4 py-2">Modify the values and click the calculate button to use</h6>
+                <div class="ageResult">
+                
+                </div>
+                <form id="ageMainForm">
+                  <div class="row justify-content-center">
+                    <div class="col-md-4 text-right gx-5 mt-1">
+                      <span class="pt-2">Date of Birth</span>
+                    </div>
+                    <div class="col-md-4 gx-0">
+                      <div class="form-group">
+                        <input type="date" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-md-2 gx-0">
+                      <div class="form-group">
+                        <input type="time" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-md-2 gx-3 pt-1">
+                      <i id="dateIcon" class="far fa-calendar-alt"></i>
+                    </div>
+                  </div>
+
+                  <!-- 2nd ROW -->
+
+                  <div class="row justify-content-center mt-3">
+                    <div class="col-md-4 text-right gx-5 mt-1">
+                      <span class="pt-2">Age at the Date of</span>
+                    </div>
+                    <div class="col-md-4 gx-0">
+                      <div class="form-group">
+                        <input type="date" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-md-2 gx-0">
+                      <div class="form-group">
+                        <input type="time" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-md-2 gx-3 pt-1">
+                      <i id="dateIcon" class="far fa-calendar-alt"></i>
+                    </div>
+                  </div>
+                  <div class="form-group text-center mt-3">
+                    <input id="submit" class="btn btn-success shadow-none" type="submit" value="CALCULATE">
+                  </div>
+                </form>
+                <div id="result_show">
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- Popper.js first, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    <script src="./function.js"></script>
+    <script src="./app.js"></script>
+
+  </body>
+</html>
