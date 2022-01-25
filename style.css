@@ -30,3 +30,8 @@ body{
 #submit{
     font-weight: 700;
 }
+
+/* ADD PRODUCT CSS */
+#mainProductForm button{
+    margin: 0 47%;
+}

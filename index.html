@@ -14,11 +14,12 @@
     <!-- MY CSS -->
     <link rel="stylesheet" href="style.css">
 
-
     <title>Hello, world!</title>
+
   </head>
   <body>
 
+    <!-- Counter Loader -->
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -51,9 +52,9 @@
       </div>
     </div>
 
-    
-
-    <div class="container mb-5">
+    <hr>
+    <!-- AGE CALCULATOR -->
+    <div class="container my-5">
       <div class="row">
         <div class="col-md-12">
           <div class="ageCalculator ">
@@ -68,7 +69,7 @@
                 </div>
                 <form id="ageMainForm">
                   <div class="row justify-content-center">
-                    <div class="col-md-4 text-right gx-5 mt-1">
+                    <div class="col-md-3 text-right gx-5 mt-1">
                       <span class="pt-2">Date of Birth</span>
                     </div>
                     <div class="col-md-4 gx-0">
@@ -76,7 +77,7 @@
                         <input type="date" class="form-control">
                       </div>
                     </div>
-                    <div class="col-md-2 gx-0">
+                    <div class="col-md-3 gx-0">
                       <div class="form-group">
                         <input type="time" class="form-control">
                       </div>
@@ -85,30 +86,9 @@
                       <i id="dateIcon" class="far fa-calendar-alt"></i>
                     </div>
                   </div>
-
-                  <!-- 2nd ROW -->
-
-                  <div class="row justify-content-center mt-3">
-                    <div class="col-md-4 text-right gx-5 mt-1">
-                      <span class="pt-2">Age at the Date of</span>
+                    <div class="form-group text-center mt-3">
+                      <input id="submit" class="btn btn-success shadow-none" type="submit" value="CALCULATE">
                     </div>
-                    <div class="col-md-4 gx-0">
-                      <div class="form-group">
-                        <input type="date" class="form-control">
-                      </div>
-                    </div>
-                    <div class="col-md-2 gx-0">
-                      <div class="form-group">
-                        <input type="time" class="form-control">
-                      </div>
-                    </div>
-                    <div class="col-md-2 gx-3 pt-1">
-                      <i id="dateIcon" class="far fa-calendar-alt"></i>
-                    </div>
-                  </div>
-                  <div class="form-group text-center mt-3">
-                    <input id="submit" class="btn btn-success shadow-none" type="submit" value="CALCULATE">
-                  </div>
                 </form>
                 <div id="result_show">
 
@@ -120,10 +100,96 @@
       </div>
     </div>
 
-
+    <hr>
+    <!-- PRODUCT ADD -->
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-lg-4"></div>
+        <div class="col-lg-4">
+          <div class="form-group pb-3">
+            <input type="text" id="clickMeAddp" class="btn w-100 btn-primary shadow-none" value="Add Your Product">
+          </div>
+          <div id="mainProductForm" class="card shadow-lg ">
+            <button id="closeBTN" class="close shadow-none">&times;</button>
+            <div class="card-title">
+              <h4 class="py-2 text-center">Set Prodect Detais</h4>
+            </div>
+            <div class="card-body">
+              <form id="productForm">
+                <div class="form-group">
+                  <input name="productName" type="text" class="form-control shadow-none" placeholder="Product name">
+                </div>
+                <div class="form-group my-3">
+                  <input name="regularPrice" type="text" class="form-control shadow-none" placeholder="Rugular price">
+                </div>
+                <div class="form-group">
+                  <input name="salePrice" type="text" class="form-control shadow-none" placeholder="Sale price">
+                </div>
+                <div class="form-group my-3">
+                  <input name="photo" type="text" class="form-control shadow-none" placeholder="Product image link">
+                </div>
+                <div class="form-group-sm my-3">
+                  <input id="submit" type="submit" class="btn btn-primary shadow-none w-100" value="Add Product">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="productList"  class="row mb-5">
+        
+      </div>
+    </div>
     
+    <hr>
+    <!-- TEAM MEMBER -->
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="card">
+            <div class="card-title">
+              <h3 class="text-white bg-success text-center py-2">Add Developer</h3>
+            </div>
+            <div class="card-body">
+              <form id="teamForm">
+                <div class="fomr-group pb-3">
+                  <input name="dName" type="text" class="form-control shadow-none" placeholder="Developer Name">
+                </div>
+                <div class="fomr-group">
+                  <strong>Skill</strong>
+                  <br>
+                  <input id="react" name="skills" type="checkbox" value="React Developer"> <label for="react">React Developer</label><br>
+                  <input id="node" name="skills" type="checkbox" value="Node JS Developer"> <label for="node">Node JS Developer</label><br>
+                  <input id="laravel" name="skills" type="checkbox" value="Laravel Developer"> <label for="laravel">Laravel Developer</label><br>
+                  <input id="php" name="skills" type="checkbox" value="PHP Developer"> <label for="php">PHP Developer</label><br>
+                  <input id="djanggo" name="skills" type="checkbox" value="Djanggo Developer"> <label for="djanggo">Djanggo Developer</label><br>
+                  <input id="python" name="skills" type="checkbox" value="Python Developer"> <label for="python">Python Developer</label><br>
+                </div>
+                <div class="fomr-group pt-3">
+                  <strong>Gender</strong>
+                  <br>
+                  <input id="male" name="gender" type="radio" value="Male"> <label for="male" class="mr-3">Male</label>
+                  <input id="female" name="gender" type="radio" value="Female"> <label for="female">Female</label>
+                </div>
+                <div class="fomr-group pt-3">
+                  <input id="dPhoto" name="photo" type="text" class="form-control shadow-none" placeholder="Developer photo link">
+                </div>
+                <div class="fomr-group pt-3">
+                  <input id="addDev" name="devs" type="submit" class="btn btn-success shadow-none w-100" value="Add Developer">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-9">
+          <div class="row memberRuslt">
+            
+          </div>
+        </div>
+      </div>
+    </div>
 
-
+    <!-- https://upload.wikimedia.org/wikipedia/commons/4/48/Outdoors-man-portrait_%28cropped%29.jpg -->
 
     <!-- Optional JavaScript -->
     <!-- Popper.js first, then Bootstrap JS -->
