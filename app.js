@@ -146,8 +146,8 @@ function allProducts(){
 
     product_all.map(productData => {
         data += `
-        <div class="col-lg-3 my-3">
-           <div class="card">
+        <div class="col-lg-3 mb-4">
+           <div class="card myProduct">
             <img style="width:100%; height: 200px; object-fit:cover;" class="card-img" src="${ productData.image }" alt="">
                 <div class="card-body">
                     <h4>${ productData.name }</h4>
@@ -225,7 +225,7 @@ function allDevs(){
         });
 
         devData += `
-            <div class="col-lg-4 pb-4">
+            <div class="col-lg-4 mb-4">
                 <div class="card">
                     <img class="card-img" style="width:100%; height:220px; object-fit:cover;" src="${ ddata.dPhoto }" alt="">
                     <div class="card-body">

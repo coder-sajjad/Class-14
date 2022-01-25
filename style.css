@@ -35,3 +35,16 @@ body{
 #mainProductForm button{
     margin: 0 47%;
 }
+#productList .card:hover img{
+    transform: scale(1.1);
+    
+}
+.card img{
+    width: 100%;
+    height: 200px;
+    transition: .1s;
+}
+.card{
+    overflow: hidden;
+    
+}
