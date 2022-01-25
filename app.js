@@ -151,7 +151,7 @@ function allProducts(){
             <img style="width:100%; height: 200px; object-fit:cover;" class="card-img" src="${ productData.image }" alt="">
                 <div class="card-body">
                     <h4>${ productData.name }</h4>
-                    <p><span>$<del>${ productData.rprice }</del></span> <span>$${ productData.sprice }</span></p>
+                    <p><span><del>${ productData.rprice ? '$' + productData.rprice : productData.rprice = '' }</del></span> <span>$${ productData.sprice }</span></p>
                     <div class="form-group text-center">
                     <input type="submit" class="btn btn-primary shadow-none" value="Add to cart">
                     </div>
