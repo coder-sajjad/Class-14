@@ -213,7 +213,14 @@ teamForm.addEventListener('submit', function(e){
 allDevs();
 function allDevs(){
 
-    let all_Dev = dataGet('devs');
+    let all_Dev;
+    if(all_Dev = dataGet('devs')){
+        all_Dev = dataGet('devs')
+    }else{
+        all_Dev = [];
+    }
+
+    // let all_Dev = dataGet('devs');
     let devData = '';
 
     all_Dev.map(ddata => {
